@@ -1,4 +1,3 @@
-
 if (Meteor.isClient) {
   Template.splash.events({
     'click input[type=submit]': function (event) {
