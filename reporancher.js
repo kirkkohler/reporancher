@@ -1,11 +1,9 @@
 
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to reporancher.";
-  };
-
-  Template.hello.events({
-    'click input' : function () {
+  Template.splash.events({
+    'click input[type=submit]': function (event) {
+      event.preventDefault();
+      console.log("You clicked the Battle button dawg.")
       // get data from form template
       var form_data = {
         "user1": "bob",
@@ -13,9 +11,7 @@ if (Meteor.isClient) {
         "user2": "alice",
         "repo2" : "reponame2"
       };
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("Here is the data: " + data);
+      console.log("Here is the data: ");
       // make API calls here using data
       // ...
       // render the new template with both monsters (passed in?)
