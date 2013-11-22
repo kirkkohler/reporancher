@@ -1,3 +1,57 @@
 <template name="splash">
-  Splash Screen!
+  <form class="form-horizontal">
+    <fieldset>      
+      <!-- Form Name -->
+      <legend>Pick your users to battle</legend>
+
+      <!-- TODO: Figure out how to display fields in left to right -->
+      <div class="row">
+        <div class="col-4">
+          <div class="control-group">
+            <!-- Search Player1 input-->
+            <label class="control-label" for="username1">Player 1</label>
+            <div class="controls">
+              <input id="username1" name="username1" placeholder="gituser1" class="input-large search-query" type="text">
+              <p class="help-block">Search users on github to battle</p>
+            </div>
+            <br />
+            <!-- Search Repo1 input-->
+            <label class="control-label" for="repository1">Repository 1</label>
+            <div class="controls">
+              <input id="repository1" name="repository1" placeholder="repository1" class="input-large search-query" type="text">
+              <p class="help-block">Search repos to use in battle</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Button -->      
+        <div class="col-4">      
+          <div class="control-group">
+            <label class="control-label" for="battle"></label>
+            <div class="controls">
+              <button id="battle" name="battle" class="btn btn-inverse btn-large">Battle <span class="icon-white icon-fire"></span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="control-group">
+            <!-- Search Player2 input-->
+            <label class="control-label" for="username2">Player 2</label>
+            <div class="controls">
+              <input id="username2" name="username2" placeholder="gituser2" class="input-large search-query" type="text">
+              <p class="help-block">Search users on github to battle</p>
+            </div>
+            <br />
+            <!-- Search Repo2 input-->
+            <label class="control-label" for="repository2">Repository 2</label>
+            <div class="controls">
+              <input id="repository2" name="repository2" placeholder="repository2" class="input-large search-query" type="text">
+              <p class="help-block">Search repos to use in battle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </form>
 </template>
