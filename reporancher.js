@@ -3,7 +3,7 @@ if (Meteor.isClient) {
   Template.splash.events({
     'click input[type=submit]': function (event) {
       event.preventDefault();
-      console.log("You clicked the Battle button dawg.")
+      console.log("You clicked the Battle button dawg.");
       // get data from form template
       var form_data = {
         "user1": "bob",
